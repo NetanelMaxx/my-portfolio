@@ -234,8 +234,8 @@ export default function App() {
               className="flex items-center cursor-pointer group"
               onClick={scrollToTop}
             >
-              <div className="w-10 h-10 bg-gradient-to-tr from-violet-600 to-fuchsia-600 rounded-xl flex items-center justify-center mr-0.5 shadow-lg group-hover:rotate-12 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">N</span>
+              <div className="w-8 h-8 bg-gradient-to-tr from-violet-600 to-fuchsia-600 rounded-xl flex items-center justify-center mr-0.5 shadow-lg group-hover:rotate-12 transition-transform duration-300">
+                <span className="text-white items-center justify-center font-bold text-xl">N</span>
               </div>
               <span className="font-bold text-xl tracking-tight text-gray-900">athan's <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-fuchsia-600">DevFolio</span></span>
             </div>
@@ -586,7 +586,7 @@ export default function App() {
                   </a>
                  
                   <div className="flex gap-4 pt-4">
-                    <a href="#" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600 shadow-sm hover:bg-[#0077b5] hover:text-white transition-all duration-300 hover:-translate-y-1">
+                    <a href="https://www.linkedin.com/in/nathaniel-macalinao-cc-07a145265/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600 shadow-sm hover:bg-[#0077b5] hover:text-white transition-all duration-300 hover:-translate-y-1">
                       <Linkedin size={20} />
                     </a>
                   </div>
