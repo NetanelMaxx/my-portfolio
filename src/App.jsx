@@ -595,14 +595,17 @@ export default function App() {
 
               {/* Contact Form */}
               <div className="bg-white rounded-3xl shadow-xl p-8 md:p-10">
-                <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <form name="contact" method="POST" data-netlify="true" className="space-y-6">
+                  <input type="hidden" name="form-name" value="contact" />
                   <div>
                     <label htmlFor="name" className="block text-sm font-bold text-gray-700 mb-2">Name</label>
                     <input
                       type="text"
                       id="name"
+                      name="name"
                       className="w-full px-4 py-4 rounded-xl bg-gray-50 border-2 border-gray-100 focus:border-violet-500 focus:bg-white outline-none transition-all font-medium"
                       placeholder="What's your name?"
+                      required
                     />
                   </div>
                   <div>
@@ -610,17 +613,21 @@ export default function App() {
                     <input
                       type="email"
                       id="email"
+                      name="email"
                       className="w-full px-4 py-4 rounded-xl bg-gray-50 border-2 border-gray-100 focus:border-violet-500 focus:bg-white outline-none transition-all font-medium"
                       placeholder="hello@example.com"
+                      required
                     />
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-bold text-gray-700 mb-2">Message</label>
                     <textarea
                       id="message"
+                      name="message"
                       rows="4"
                       className="w-full px-4 py-4 rounded-xl bg-gray-50 border-2 border-gray-100 focus:border-violet-500 focus:bg-white outline-none transition-all font-medium resize-none"
                       placeholder="Tell me about your goals..."
+                      required
                     ></textarea>
                   </div>
                   <Button variant="primary" className="w-full py-4 text-lg shadow-xl shadow-violet-500/20">
