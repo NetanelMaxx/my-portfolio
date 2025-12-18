@@ -234,10 +234,10 @@ export default function App() {
               className="flex items-center cursor-pointer group"
               onClick={scrollToTop}
             >
-              <div className="w-8 h-8 bg-gradient-to-tr from-violet-600 to-fuchsia-600 rounded-xl flex items-center justify-center mr-0.5 shadow-lg group-hover:rotate-12 transition-transform duration-300">
-                <span className="text-white items-center justify-center font-bold text-xl">N</span>
+              <div className="w-8 h-8 sm:w-8 sm:h-8 bg-gradient-to-tr from-violet-600 to-fuchsia-600 rounded-xl flex items-center justify-center mr-0.5 shadow-lg group-hover:rotate-12 transition-transform duration-300">
+                <span className="text-white font-bold text-lg sm:text-xl">N</span>
               </div>
-              <span className="font-bold text-xl tracking-tight text-gray-900">athan's <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-fuchsia-600">DevFolio</span></span>
+              <span className="font-bold text-lg sm:text-xl tracking-tight text-gray-900">athan's <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-fuchsia-600">DevFolio</span></span>
             </div>
 
             {/* Desktop Nav */}
@@ -319,7 +319,7 @@ export default function App() {
               Available for new opportunities
             </div>
            
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 tracking-tight mb-8 leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 tracking-tight mb-8 leading-[1.1]">
               Crafting Digital
               <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 via-fuchsia-500 to-pink-500">
@@ -327,7 +327,7 @@ export default function App() {
               </span>
             </h1>
            
-            <p className="text-xl sm:text-2xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
               I transform ideas into high-quality web experiences.
               Specializing in <span className="text-gray-900 font-semibold">React</span>, <span className="text-gray-900 font-semibold">Design Systems</span>, and <span className="text-gray-900 font-semibold">Interactive UI</span>.
             </p>
@@ -367,7 +367,7 @@ export default function App() {
               {/* Decorative shapes behind image */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-violet-200 to-fuchsia-100 rounded-full blur-3xl opacity-60"></div>
              
-              <div className="relative w-80 h-80 sm:w-96 sm:h-96">
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
                 {/* Main Profile Image - Placeholder */}
                 <div className="w-full h-full rounded-full overflow-hidden border-8 border-white shadow-2xl relative z-10 group">
                   <img
@@ -380,11 +380,11 @@ export default function App() {
                 </div>
                
                 {/* Floating Elements */}
-                <div className="absolute -top-4 -right-4 bg-white p-4 rounded-2xl shadow-xl z-20 animate-bounce-slow">
-                  <Terminal size={32} className="text-violet-600" />
+                <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 bg-white p-3 sm:p-4 rounded-2xl shadow-xl z-20 animate-bounce-slow">
+                  <Terminal size={24} className="sm:w-8 sm:h-8 text-violet-600" />
                 </div>
-                <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-2xl shadow-xl z-20 animate-bounce-slow animation-delay-1500">
-                  <Code size={32} className="text-fuchsia-500" />
+                <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 bg-white p-3 sm:p-4 rounded-2xl shadow-xl z-20 animate-bounce-slow animation-delay-1500">
+                  <Code size={24} className="sm:w-8 sm:h-8 text-fuchsia-500" />
                 </div>
               </div>
             </div>
@@ -561,7 +561,7 @@ export default function App() {
       {/* Contact Section */}
       <section id="contact" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-violet-50 rounded-[3rem] overflow-hidden p-8 md:p-16 lg:p-20 relative">
+          <div className="bg-violet-50 rounded-[2rem] sm:rounded-[3rem] overflow-hidden p-6 sm:p-8 md:p-16 lg:p-20 relative">
             {/* Decor */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-fuchsia-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-violet-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 translate-y-1/2 -translate-x-1/2"></div>
@@ -569,32 +569,32 @@ export default function App() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 relative z-10">
               {/* Contact Info */}
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Let's build something <br/> <span className="text-violet-600">extraordinary.</span></h2>
-                <p className="text-gray-600 mb-10 text-lg leading-relaxed">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Let's build something <br/> <span className="text-violet-600">extraordinary.</span></h2>
+                <p className="text-gray-600 mb-6 sm:mb-10 text-base sm:text-lg leading-relaxed">
                   Whether you have a specific project in mind or just want to chat about the latest tech trends, I'm always open to new opportunities.
                 </p>
 
-                <div className="space-y-8">
+                <div className="space-y-4 sm:space-y-6 md:space-y-8">
                   <a href="mailto:its.nathaniel.macalinao@gmail.com" className="flex items-center group">
-                    <div className="flex-shrink-0 w-12 h-12 bg-white rounded-full flex items-center justify-center text-violet-600 shadow-sm group-hover:bg-violet-600 group-hover:text-white transition-all duration-300">
-                      <Mail size={20} />
+                    <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center text-violet-600 shadow-sm group-hover:bg-violet-600 group-hover:text-white transition-all duration-300">
+                      <Mail size={18} className="sm:w-5 sm:h-5" />
                     </div>
-                    <div className="ml-6">
-                      <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Email Me</h4>
-                      <p className="text-xl font-medium text-gray-900">its.nathaniel.macalinao@gmail.com</p>
+                    <div className="ml-4 sm:ml-6">
+                      <h4 className="text-xs sm:text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Email Me</h4>
+                      <p className="text-sm sm:text-lg md:text-xl font-medium text-gray-900 break-all sm:break-normal">its.nathaniel.macalinao@gmail.com</p>
                     </div>
                   </a>
                  
-                  <div className="flex gap-4 pt-4">
-                    <a href="https://www.linkedin.com/in/nathaniel-macalinao-cc-07a145265/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600 shadow-sm hover:bg-[#0077b5] hover:text-white transition-all duration-300 hover:-translate-y-1">
-                      <Linkedin size={20} />
+                  <div className="flex gap-4 pt-2 sm:pt-4">
+                    <a href="https://www.linkedin.com/in/nathaniel-macalinao-cc-07a145265/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center text-gray-600 shadow-sm hover:bg-[#0077b5] hover:text-white transition-all duration-300 hover:-translate-y-1">
+                      <Linkedin size={18} className="sm:w-5 sm:h-5" />
                     </a>
                   </div>
                 </div>
               </div>
 
               {/* Contact Form */}
-              <div className="bg-white rounded-3xl shadow-xl p-8 md:p-10">
+              <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-8 md:p-10">
                 <form name="contact" method="POST" data-netlify="true" className="space-y-6">
                   <input type="hidden" name="form-name" value="contact" />
                   <div>
@@ -630,7 +630,7 @@ export default function App() {
                       required
                     ></textarea>
                   </div>
-                  <Button variant="primary" className="w-full py-4 text-lg shadow-xl shadow-violet-500/20">
+                  <Button variant="primary" className="w-full py-3 sm:py-4 text-base sm:text-lg shadow-xl shadow-violet-500/20">
                     Send Message
                   </Button>
                 </form>
@@ -645,8 +645,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0 text-center md:text-left">
-              <span className="font-bold text-xl tracking-tight text-gray-900">Nathan's <span className="text-violet-600">DevFolio</span></span>
-              <p className="text-gray-500 text-sm mt-1">Designed & Built with ❤️ in React</p>
+              <span className="font-bold text-lg sm:text-xl tracking-tight text-gray-900">Nathan's <span className="text-violet-600">DevFolio</span></span>
+              <p className="text-gray-500 text-xs sm:text-sm mt-1">Designed & Built with ❤️ in React</p>
             </div>
             <div className="text-sm text-gray-400">
               © 2025. All rights reserved.
